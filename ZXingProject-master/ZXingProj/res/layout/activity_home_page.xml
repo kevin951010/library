@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="my.lib_manage.home_page">
+
+    <LinearLayout
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingRight="16dp"
+                android:background="@drawable/sky_bgimg">
+                <EditText android:id="@+id/et_keywords"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="6"
+                    android:hint="输入书本编号"
+                    android:numeric="integer"
+                    />
+
+                <Button
+                    android:id="@+id/btn_search"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_search_black_48dp"
+                    android:minHeight="48dp" 
+                    android:onClick="GoSearch"/>
+
+            </LinearLayout>
+
+    <Button android:id="@+id/ibtn_scanQRcode"
+        android:layout_height="300dp"
+        android:layout_width="300dp"
+        android:background="@drawable/scan_qrcode_icon"
+        android:layout_margin="32dp"
+        android:padding="32dp"
+        android:scaleType="fitCenter"
+        android:onClick="GoScan"
+        />
+    </LinearLayout>
+</RelativeLayout>

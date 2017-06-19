@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">图书管理</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="btn_login">登  录</string>
+    <string name="txt_noaccount">没有账户？</string>
+    <string name="txt_skiplogin">稍后再说</string>
+    <string name="txt_loading_title">XX馆图书管理</string>
+
+    <string name="txt_id_hint">请输入手机号/用户名</string>
+    <string name="txt_pwd_hint">请输入密码</string>
+    <string name="txt_forgetpwd">忘了密码？</string>
+
+    <string name="navi_home">主页</string>
+    <string name="navi_person">个人</string>
+    <string name="navi_statistics">统计</string>
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+        <LinearLayout android:id="@+id/two_btns"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+               
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="借阅"
+                android:background="#ffffff"
+                android:id="@+id/borrow"/>
+
+            <Button  
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="#33CC33"
+                android:text="归还" 
+                android:id="@+id/giveback"/>
+        </LinearLayout>
+    <LinearLayout
+        android:background="@android:color/darker_gray"
+        android:layout_above="@id/two_btns"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_margin="8dp"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="160dp"
+                android:background="@color/brightblue"
+                android:scaleType="fitCenter" 
+                android:id="@+id/bookpicture"
+                />
+            <LinearLayout
+                android:layout_margin="8dp"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="书　名:加载中"
+                    android:paddingTop="-15dp"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/bookname"/>
+                <TextView
+                    android:textSize="16sp"
+                    android:paddingTop="-15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="作　者:加载中"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/bookauthor"/>
+                <TextView
+                    android:textSize="16sp"
+                    android:paddingTop="-15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="出版社:加载中"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/bookpublic"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        
+	<ScrollView            
+	    	 android:layout_marginTop="-20dp"
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="3"
+             android:padding="8dp"
+	    	android:fillViewport="true" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:padding="8dp"
+            android:textSize="18sp"
+            android:text="加载中"
+            android:textColor="@android:color/white"
+            android:id="@+id/introduction"/>
+     </ScrollView>
+     <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textSize="18sp"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:id="@+id/overtime"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

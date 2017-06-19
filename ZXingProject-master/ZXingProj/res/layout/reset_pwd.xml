@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout android:id="@+id/login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="重置密码"
+            android:background="@color/cleargreen"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:textSize="12pt"
+            android:gravity="center"/>
+
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="1.验证账号"
+            android:textSize="12pt"
+            android:layout_width="wrap_content" />
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text=">>>>"
+            android:textSize="12pt"
+            android:layout_width="wrap_content" />
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="2.重置密码"
+            android:textSize="12pt"
+            android:textColor="@android:color/tab_indicator_text"
+            android:drawableBottom="@drawable/underline"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+
+    <EditText android:id="@+id/rst_pwd"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入新的密码"
+        android:inputType="textPassword" />
+    <EditText android:id="@+id/rst_pwd_repeat"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请确认新的密码"
+        android:inputType="textPassword" />
+    <Button android:id="@+id/rst_confirm"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确  认"
+        android:padding="8dp"/>
+</LinearLayout>

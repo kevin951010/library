@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout android:id="@+id/login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="重置密码"
+            android:background="@color/cleargreen"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:textSize="12pt"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/img_pre"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="-10.0dip"
+            android:src="@drawable/ic_keyboard_backspace_black_48dp"
+            android:onClick="BackToSplash"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="1.验证账号"
+            android:textSize="12pt"
+            android:textColor="@android:color/tab_indicator_text"
+            android:drawableBottom="@drawable/underline"
+            android:layout_width="wrap_content" />
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text=">>>>"
+            android:textSize="12pt"
+            android:layout_width="wrap_content" />
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="2.重置密码"
+            android:textSize="12pt"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+
+    <EditText android:id="@+id/fgt_phonenumber"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入手机号"
+        android:inputType = "phone"
+        android:ems="11" 
+        android:numeric="integer"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+
+        <EditText android:id="@+id/fgt_phonecode"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="请输入验证码" 
+            android:numeric="integer"/>
+
+        <Button
+            android:id="@+id/fgt_getcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="2"
+            android:text="获取验证码"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+
+    <Button android:id="@+id/fgt_next"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下一步"
+        android:padding="8dp"/>
+
+
+</LinearLayout>
